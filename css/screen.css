@@ -82,7 +82,7 @@
         width: 100%;
         height: auto; }
       /* line 83, ../scss/screen.scss */
-      .main section#oooShiny .work li a span {
+      .main section#oooShiny .work li a div {
         display: none;
         padding: 0.625rem;
         background: rgba(0, 0, 0, 0.8);
@@ -91,9 +91,17 @@
         bottom: 0;
         left: 0;
         width: 100%; }
+        /* line 92, ../scss/screen.scss */
+        .main section#oooShiny .work li a div p {
+          font-size: 0.6875rem; }
+        /* line 95, ../scss/screen.scss */
+        .main section#oooShiny .work li a div h4 {
+          font-size: 0.75rem;
+          color: #fff;
+          text-transform: uppercase; }
 
 @media only screen and (min-width: 40.063em) {
-  /* line 99, ../scss/screen.scss */
+  /* line 107, ../scss/screen.scss */
   #banner {
     background-color: #ffb800;
     *zoom: 1;
@@ -106,7 +114,7 @@
     background-image: linear-gradient(to right, #ffb800 0%, #ffb800 50%, #ff8800 50%, #ff8800 100%);
     position: relative;
     padding: 12.5rem 0; }
-    /* line 106, ../scss/screen.scss */
+    /* line 114, ../scss/screen.scss */
     #banner h2 {
       font-family: 'Quattrocento Sans', sans-serif;
       font-size: 3rem;
@@ -114,72 +122,72 @@
       text-align: center;
       text-transform: uppercase;
       font-weight: bold; }
-    /* line 114, ../scss/screen.scss */
+    /* line 122, ../scss/screen.scss */
     #banner .amp {
       position: absolute;
       top: 0px;
       left: 25%;
       width: 50%;
       z-index: 1; }
-      /* line 120, ../scss/screen.scss */
+      /* line 128, ../scss/screen.scss */
       #banner .amp h2 {
         font-size: 33.75rem;
         filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
         opacity: 0.2;
         line-height: 1; }
 
-  /* line 127, ../scss/screen.scss */
+  /* line 135, ../scss/screen.scss */
   .main section {
     padding: 3.75rem 0; }
-    /* line 129, ../scss/screen.scss */
+    /* line 137, ../scss/screen.scss */
     .main section h3 {
       font-size: 2.25rem;
       font-weight: normal;
       text-transform: uppercase;
       margin-top: 0; }
-    /* line 136, ../scss/screen.scss */
+    /* line 144, ../scss/screen.scss */
     .main section#fyi div.column {
       text-align: center; }
-      /* line 138, ../scss/screen.scss */
+      /* line 146, ../scss/screen.scss */
       .main section#fyi div.column img {
         float: none;
         width: auto;
         height: auto; }
-      /* line 143, ../scss/screen.scss */
+      /* line 151, ../scss/screen.scss */
       .main section#fyi div.column h4 {
         font-size: 1.5rem;
         line-height: 1.5;
         margin-top: 2.125rem; }
-      /* line 148, ../scss/screen.scss */
+      /* line 156, ../scss/screen.scss */
       .main section#fyi div.column p {
         text-align: left;
         margin: 1.25rem 1rem; }
-      /* line 152, ../scss/screen.scss */
+      /* line 160, ../scss/screen.scss */
       .main section#fyi div.column .txt {
         float: none;
         width: auto; } }
 /* FOUNDATION OVERRIDES */
-/* line 161, ../scss/screen.scss */
+/* line 169, ../scss/screen.scss */
 [data-magellan-expedition], [data-magellan-expedition-clone] {
   padding: 0; }
 
-/* line 164, ../scss/screen.scss */
+/* line 172, ../scss/screen.scss */
 .top-bar {
   z-index: 100;
   height: 60px; }
-  /* line 168, ../scss/screen.scss */
+  /* line 176, ../scss/screen.scss */
   .top-bar .social li {
     float: left; }
-    /* line 170, ../scss/screen.scss */
+    /* line 178, ../scss/screen.scss */
     .top-bar .social li a {
       padding: 10px; }
-  /* line 175, ../scss/screen.scss */
+  /* line 183, ../scss/screen.scss */
   .top-bar .name {
     height: 60px; }
-    /* line 177, ../scss/screen.scss */
+    /* line 185, ../scss/screen.scss */
     .top-bar .name h1 {
       padding: 9px 0; }
-      /* line 179, ../scss/screen.scss */
+      /* line 187, ../scss/screen.scss */
       .top-bar .name h1 a {
         background: url(../img/zk-logo.png) 0 0 no-repeat;
         background-size: contain;
@@ -190,19 +198,19 @@
         white-space: nowrap; }
 
 @media only screen and (min-width: 40.063em) {
-  /* line 192, ../scss/screen.scss */
+  /* line 200, ../scss/screen.scss */
   .top-bar {
     height: 70px; }
-    /* line 194, ../scss/screen.scss */
+    /* line 202, ../scss/screen.scss */
     .top-bar .left {
       margin-left: 20px; }
-    /* line 197, ../scss/screen.scss */
+    /* line 205, ../scss/screen.scss */
     .top-bar .name {
       height: 70px; }
-      /* line 199, ../scss/screen.scss */
+      /* line 207, ../scss/screen.scss */
       .top-bar .name h1 {
         padding: 9px 0; }
-        /* line 201, ../scss/screen.scss */
+        /* line 209, ../scss/screen.scss */
         .top-bar .name h1 a {
           background: url(../img/zk-logo.png) 0 0 no-repeat;
           background-size: contain;
@@ -212,31 +220,31 @@
           overflow: hidden;
           white-space: nowrap; }
 
-  /* line 213, ../scss/screen.scss */
+  /* line 221, ../scss/screen.scss */
   .top-bar-section ul.left li > a {
     font-family: 'Quattrocento Sans', sans-serif;
     font-size: 1rem;
     text-transform: uppercase; }
 
-  /* line 218, ../scss/screen.scss */
+  /* line 226, ../scss/screen.scss */
   .top-bar-section li:not(.has-form) a:not(.button),
   .top-bar-section li.active:not(.has-form) a:not(.button) {
     line-height: 70px; }
-    /* line 221, ../scss/screen.scss */
+    /* line 229, ../scss/screen.scss */
     .top-bar-section li:not(.has-form) a:not(.button):hover,
     .top-bar-section li.active:not(.has-form) a:not(.button):hover {
       background: #086fa1; }
 
-  /* line 225, ../scss/screen.scss */
+  /* line 233, ../scss/screen.scss */
   .top-bar-section li.active:not(.has-form) a:not(.button) {
     background: #086fa1; }
 
-  /* line 228, ../scss/screen.scss */
+  /* line 236, ../scss/screen.scss */
   .top-bar-section .social li:not(.has-form) a:not(.button) {
     padding: 0 10px;
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
     opacity: 0.4; }
-    /* line 231, ../scss/screen.scss */
+    /* line 239, ../scss/screen.scss */
     .top-bar-section .social li:not(.has-form) a:not(.button):hover {
       filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
       opacity: 1;
