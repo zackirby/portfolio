@@ -14,7 +14,7 @@
 	position: relative;
 	padding: rem-calc(60 0);
 	h2 {
-		font-size: rem-calc(48);
+		font-size: rem-calc(24);
 		color: #fff;
 		text-align: center;
 		text-transform: uppercase;
@@ -27,37 +27,29 @@
 		width: 50%;
 		z-index: 1;
 		h2 {
-			font-size: rem-calc(540);
+			font-size: rem-calc(270);
 			@include opacity(.2);
-			line-height: rem-calc(540);
 		}
 	}
 }
 .main {
 	section {
 		padding: rem-calc(30 0);
-		height: 100%;
-		display: table;
-		width: 100%;
 		h3 {
 			font-size: rem-calc(24);
 			font-weight: normal;
 			text-transform: uppercase;
 			margin-bottom: rem-calc(64);
 		}
-		.row {
-			display: table-cell;
-			width: 100%;
-			height: 100%;
-			vertical-align: middle;
-		}
+
 		&#fyi {
 			div.column {
 				text-align: left;
 				img {
 					float: left;
-					width: 105px;
+					width: 35px;
 					height: auto;
+					margin: 4px 4px 0 4px;
 				}
 				h4 {
 					font-size: rem-calc(24);
@@ -73,8 +65,8 @@
 					line-height: 1.8;
 				}
 				.txt {
-					float: left;
-					width: 70%;
+					float: none;
+					width: auto;
 				}
 			}
 		}
@@ -110,6 +102,7 @@
 		$experimental-support-for-svg: true;
 		@include background-image(linear-gradient(left,  #ffb800 0%,#ffb800 50%,#ff8800 50%,#ff8800 100%));
 		position: relative;
+		padding: rem-calc(200 0);
 		h2 {
 			font-family: 'Quattrocento Sans', sans-serif;
 			font-size: rem-calc(48);
@@ -120,7 +113,7 @@
 		}
 		.amp {
 			position: absolute;
-			top: -50px;
+			top: 0px;
 			left: 25%;
 			width: 50%;
 			z-index: 1;
