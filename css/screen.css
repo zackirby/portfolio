@@ -1,64 +1,66 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 8, ../scss/screen.scss */
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700|Quattrocento+Sans:400,700);
+/* line 5, ../scss/screen.scss */
+h1, h2, h3, h4 {
+  font-family: 'Oswald', 'Helvetica', sans-serif; }
+
+/* line 6, ../scss/screen.scss */
 #banner {
-  background-color: #ffb800;
-  *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFFB800', endColorstr='#FFFF8800');
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmYjgwMCIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjZmZiODAwIi8+PHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiNmZjg4MDAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZjg4MDAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffb800), color-stop(50%, #ffb800), color-stop(50%, #ff8800), color-stop(100%, #ff8800));
-  background-image: -moz-linear-gradient(top, #ffb800 0%, #ffb800 50%, #ff8800 50%, #ff8800 100%);
-  background-image: -webkit-linear-gradient(top, #ffb800 0%, #ffb800 50%, #ff8800 50%, #ff8800 100%);
-  background-image: linear-gradient(to bottom, #ffb800 0%, #ffb800 50%, #ff8800 50%, #ff8800 100%);
+  background: url(../img/bulbs.jpg) center top no-repeat;
+  background-position: cover;
   position: relative;
   padding: 3.75rem 0; }
-  /* line 16, ../scss/screen.scss */
+  /* line 15, ../scss/screen.scss */
   #banner h2 {
-    font-size: 1.5rem;
+    font-size: 2.25rem;
     color: #fff;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold; }
-  /* line 23, ../scss/screen.scss */
+  /* line 22, ../scss/screen.scss */
   #banner .amp {
     position: absolute;
     top: -50px;
     left: 25%;
     width: 50%;
     z-index: 1; }
-    /* line 29, ../scss/screen.scss */
+    /* line 28, ../scss/screen.scss */
     #banner .amp h2 {
       font-size: 16.875rem;
-      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
-      opacity: 0.2; }
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+      opacity: 0.4; }
 
-/* line 36, ../scss/screen.scss */
+/* line 35, ../scss/screen.scss */
 .main section {
-  padding: 1.875rem 0; }
-  /* line 38, ../scss/screen.scss */
+  padding: 1.875rem 0;
+  position: relative;
+  height: 100vh; }
+  /* line 39, ../scss/screen.scss */
+  .main section .row {
+    margin: 0 auto;
+    width: 90%;
+    float: none;
+    max-width: none; }
+  /* line 45, ../scss/screen.scss */
   .main section h3 {
     font-size: 1.5rem;
     font-weight: normal;
     text-transform: uppercase;
     margin-bottom: 4rem; }
-  /* line 46, ../scss/screen.scss */
+  /* line 52, ../scss/screen.scss */
   .main section#fyi div.column {
     text-align: left; }
-    /* line 48, ../scss/screen.scss */
+    /* line 54, ../scss/screen.scss */
     .main section#fyi div.column img {
       float: left;
       width: 35px;
       height: auto;
       margin: 4px 4px 0 4px; }
-    /* line 54, ../scss/screen.scss */
+    /* line 60, ../scss/screen.scss */
     .main section#fyi div.column h4 {
       font-size: 1.5rem;
       line-height: 1.5;
       margin-top: 0; }
-    /* line 59, ../scss/screen.scss */
+    /* line 65, ../scss/screen.scss */
     .main section#fyi div.column p {
       text-align: left;
       margin-top: 0.625rem;
@@ -66,22 +68,22 @@
       font-family: 'Open Sans', sans-serif;
       font-size: 14px;
       line-height: 1.8; }
-    /* line 67, ../scss/screen.scss */
+    /* line 73, ../scss/screen.scss */
     .main section#fyi div.column .txt {
       float: none;
       width: auto; }
-  /* line 73, ../scss/screen.scss */
+  /* line 79, ../scss/screen.scss */
   .main section#oooShiny {
     background: #63add0; }
-    /* line 76, ../scss/screen.scss */
+    /* line 82, ../scss/screen.scss */
     .main section#oooShiny .work li a {
       display: block;
       position: relative; }
-      /* line 79, ../scss/screen.scss */
+      /* line 85, ../scss/screen.scss */
       .main section#oooShiny .work li a img {
         width: 100%;
         height: auto; }
-      /* line 83, ../scss/screen.scss */
+      /* line 89, ../scss/screen.scss */
       .main section#oooShiny .work li a div {
         display: none;
         padding: 0.625rem;
@@ -91,103 +93,94 @@
         bottom: 0;
         left: 0;
         width: 100%; }
-        /* line 92, ../scss/screen.scss */
+        /* line 98, ../scss/screen.scss */
         .main section#oooShiny .work li a div p {
           font-size: 0.6875rem; }
-        /* line 95, ../scss/screen.scss */
+        /* line 101, ../scss/screen.scss */
         .main section#oooShiny .work li a div h4 {
           font-size: 0.75rem;
           color: #fff;
           text-transform: uppercase; }
 
 @media only screen and (min-width: 40.063em) {
-  /* line 107, ../scss/screen.scss */
+  /* line 113, ../scss/screen.scss */
   #banner {
-    background-color: #ffb800;
-    *zoom: 1;
-    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FFFFB800', endColorstr='#FFFF8800');
-    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmYjgwMCIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjZmZiODAwIi8+PHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiNmZjg4MDAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZjg4MDAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
-    background-size: 100%;
-    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffb800), color-stop(50%, #ffb800), color-stop(50%, #ff8800), color-stop(100%, #ff8800));
-    background-image: -moz-linear-gradient(left, #ffb800 0%, #ffb800 50%, #ff8800 50%, #ff8800 100%);
-    background-image: -webkit-linear-gradient(left, #ffb800 0%, #ffb800 50%, #ff8800 50%, #ff8800 100%);
-    background-image: linear-gradient(to right, #ffb800 0%, #ffb800 50%, #ff8800 50%, #ff8800 100%);
+    background: url(../img/bulbs.jpg) center top no-repeat;
+    background-size: cover;
     position: relative;
-    padding: 12.5rem 0; }
-    /* line 114, ../scss/screen.scss */
+    padding: 15% 0; }
+    /* line 122, ../scss/screen.scss */
     #banner h2 {
       font-family: 'Quattrocento Sans', sans-serif;
-      font-size: 3rem;
+      font-size: 3.75rem;
       color: #fff;
       text-align: center;
       text-transform: uppercase;
-      font-weight: bold; }
-    /* line 122, ../scss/screen.scss */
+      font-weight: bold;
+      text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.8); }
+    /* line 131, ../scss/screen.scss */
     #banner .amp {
       position: absolute;
-      top: 0px;
+      top: 125px;
       left: 25%;
       width: 50%;
       z-index: 1; }
-      /* line 128, ../scss/screen.scss */
+      /* line 137, ../scss/screen.scss */
       #banner .amp h2 {
         font-size: 33.75rem;
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
-        opacity: 0.2;
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+        opacity: 0.4;
         line-height: 1; }
 
-  /* line 135, ../scss/screen.scss */
-  .main section {
-    padding: 3.75rem 0; }
-    /* line 137, ../scss/screen.scss */
-    .main section h3 {
-      font-size: 2.25rem;
-      font-weight: normal;
-      text-transform: uppercase;
-      margin-top: 0; }
-    /* line 144, ../scss/screen.scss */
-    .main section#fyi div.column {
-      text-align: center; }
-      /* line 146, ../scss/screen.scss */
-      .main section#fyi div.column img {
-        float: none;
-        width: auto;
-        height: auto; }
-      /* line 151, ../scss/screen.scss */
-      .main section#fyi div.column h4 {
-        font-size: 1.5rem;
-        line-height: 1.5;
-        margin-top: 2.125rem; }
-      /* line 156, ../scss/screen.scss */
-      .main section#fyi div.column p {
-        text-align: left;
-        margin: 1.25rem 1rem; }
-      /* line 160, ../scss/screen.scss */
-      .main section#fyi div.column .txt {
-        float: none;
-        width: auto; } }
+  /* line 145, ../scss/screen.scss */
+  .main section h3 {
+    font-size: 2.25rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-top: 0; }
+  /* line 152, ../scss/screen.scss */
+  .main section#fyi div.column {
+    text-align: center; }
+    /* line 154, ../scss/screen.scss */
+    .main section#fyi div.column img {
+      float: none;
+      width: auto;
+      height: auto; }
+    /* line 159, ../scss/screen.scss */
+    .main section#fyi div.column h4 {
+      font-size: 1.5rem;
+      line-height: 1.5;
+      margin-top: 2.125rem; }
+    /* line 164, ../scss/screen.scss */
+    .main section#fyi div.column p {
+      text-align: left;
+      margin: 1.25rem 1rem; }
+    /* line 168, ../scss/screen.scss */
+    .main section#fyi div.column .txt {
+      float: none;
+      width: auto; } }
 /* FOUNDATION OVERRIDES */
-/* line 169, ../scss/screen.scss */
+/* line 177, ../scss/screen.scss */
 [data-magellan-expedition], [data-magellan-expedition-clone] {
   padding: 0; }
 
-/* line 172, ../scss/screen.scss */
+/* line 180, ../scss/screen.scss */
 .top-bar {
   z-index: 100;
   height: 60px; }
-  /* line 176, ../scss/screen.scss */
+  /* line 184, ../scss/screen.scss */
   .top-bar .social li {
     float: left; }
-    /* line 178, ../scss/screen.scss */
+    /* line 186, ../scss/screen.scss */
     .top-bar .social li a {
       padding: 10px; }
-  /* line 183, ../scss/screen.scss */
+  /* line 191, ../scss/screen.scss */
   .top-bar .name {
     height: 60px; }
-    /* line 185, ../scss/screen.scss */
+    /* line 193, ../scss/screen.scss */
     .top-bar .name h1 {
       padding: 9px 0; }
-      /* line 187, ../scss/screen.scss */
+      /* line 195, ../scss/screen.scss */
       .top-bar .name h1 a {
         background: url(../img/zk-logo.png) 0 0 no-repeat;
         background-size: contain;
@@ -198,19 +191,19 @@
         white-space: nowrap; }
 
 @media only screen and (min-width: 40.063em) {
-  /* line 200, ../scss/screen.scss */
+  /* line 208, ../scss/screen.scss */
   .top-bar {
     height: 70px; }
-    /* line 202, ../scss/screen.scss */
+    /* line 210, ../scss/screen.scss */
     .top-bar .left {
       margin-left: 20px; }
-    /* line 205, ../scss/screen.scss */
+    /* line 213, ../scss/screen.scss */
     .top-bar .name {
       height: 70px; }
-      /* line 207, ../scss/screen.scss */
+      /* line 215, ../scss/screen.scss */
       .top-bar .name h1 {
         padding: 9px 0; }
-        /* line 209, ../scss/screen.scss */
+        /* line 217, ../scss/screen.scss */
         .top-bar .name h1 a {
           background: url(../img/zk-logo.png) 0 0 no-repeat;
           background-size: contain;
@@ -220,31 +213,31 @@
           overflow: hidden;
           white-space: nowrap; }
 
-  /* line 221, ../scss/screen.scss */
+  /* line 229, ../scss/screen.scss */
   .top-bar-section ul.left li > a {
     font-family: 'Quattrocento Sans', sans-serif;
     font-size: 1rem;
     text-transform: uppercase; }
 
-  /* line 226, ../scss/screen.scss */
+  /* line 234, ../scss/screen.scss */
   .top-bar-section li:not(.has-form) a:not(.button),
   .top-bar-section li.active:not(.has-form) a:not(.button) {
     line-height: 70px; }
-    /* line 229, ../scss/screen.scss */
+    /* line 237, ../scss/screen.scss */
     .top-bar-section li:not(.has-form) a:not(.button):hover,
     .top-bar-section li.active:not(.has-form) a:not(.button):hover {
       background: #086fa1; }
 
-  /* line 233, ../scss/screen.scss */
+  /* line 241, ../scss/screen.scss */
   .top-bar-section li.active:not(.has-form) a:not(.button) {
     background: #086fa1; }
 
-  /* line 236, ../scss/screen.scss */
+  /* line 244, ../scss/screen.scss */
   .top-bar-section .social li:not(.has-form) a:not(.button) {
     padding: 0 10px;
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
     opacity: 0.4; }
-    /* line 239, ../scss/screen.scss */
+    /* line 247, ../scss/screen.scss */
     .top-bar-section .social li:not(.has-form) a:not(.button):hover {
       filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
       opacity: 1;
